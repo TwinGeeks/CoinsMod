@@ -1,0 +1,11 @@
+item.coinCopper.name=Copper Coin
+item.coinSilver.name=Silver Coin
+item.coinPlatinum.name=Platinum Coin
+item.stackCopper.name=Stack of Copper Coins
+item.stackSilver.name=Stack of Silver Coins
+item.stackGold.name=Stack of Gold Coins
+item.stackPlatinum.name=Stack of Platinum Coins
+item.bagCopper.name=Bag of Copper Coins
+item.bagSilver.name=Bag of Silver Coins
+item.bagGold.name=Bag of Gold Coins
+item.bagPlatinum.name=Bag of Platinum Coins
