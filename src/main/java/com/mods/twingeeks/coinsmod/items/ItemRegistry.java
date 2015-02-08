@@ -33,6 +33,10 @@ public class ItemRegistry {
 	public static Item goldBag = new CoinsItem("bagGold", CreativeTabs.tabMisc, 64, "coinsmod:bagGold");
 	public static Item platinumBag = new CoinsItem("bagPlatinum", CreativeTabs.tabMisc, 64, "coinsmod:bagPlatinum");
 	
+	//HAMMER
+	public static Item hammerHead = new CoinsItem("hammerHead", CreativeTabs.tabMisc, 1, "coinsmod:hammerHead");
+	public static Item strikeHammer = new CoinsTool("strikeHammer", CreativeTabs.tabMisc, 250, "coinsmod:strikeHammer");
+	
 	/**
 	 * Registers the items in the game
 	 */
@@ -40,7 +44,7 @@ public class ItemRegistry {
 		Field[] declaredFields = ItemRegistry.class.getDeclaredFields(); //get all the fields
 		for (Field field : declaredFields) {
 			//check that the field is static and a coinsitem class
-			if (!Modifier.isStatic(field.getModifiers()) || field.getType().equals(CoinsItem.class))
+			if (!Modifier.isStatic(field.getModifiers()) || CoinsItem.class.isAssignableFrom(field.getType()))
 				continue; //if either condition is not met, skip the field
 			
 			CoinsItem regItem = null;

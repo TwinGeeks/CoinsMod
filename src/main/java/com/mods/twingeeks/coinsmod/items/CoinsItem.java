@@ -24,6 +24,7 @@ public class CoinsItem extends Item {
 	 * Default constructor
 	 */
 	public CoinsItem() {
+		super();
 		//set configured values
 		setMaxStackSize(DEFAULT_STACK_SIZE);
 		setCreativeTab(DEFAULT_CREATIVE_TAB);
@@ -38,6 +39,7 @@ public class CoinsItem extends Item {
 	 * @param itemId ID of item for registration with game; also used as unlocalized name
 	 */
 	public CoinsItem(String itemId) {
+		super();
 		//set configured values
 		setMaxStackSize(DEFAULT_STACK_SIZE);
 		setCreativeTab(DEFAULT_CREATIVE_TAB);
@@ -47,7 +49,7 @@ public class CoinsItem extends Item {
 	}
 	
 	/**
-	 * Creates a neew CoinsItem instance with specified values
+	 * Creates a new CoinsItem instance with specified values
 	 * 
 	 * @param itemId id and unlocalized name of item
 	 * @param creativeTab tab on which item should appear
@@ -55,6 +57,7 @@ public class CoinsItem extends Item {
 	 * @param textureName name of texture file
 	 */
 	public CoinsItem(String itemId, CreativeTabs creativeTab, int stackSize, String textureName) {
+		super();
 		//set configured values
 		setItemId(itemId);
 		setUnlocalizedName(itemId);

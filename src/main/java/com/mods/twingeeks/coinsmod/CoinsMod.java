@@ -47,7 +47,7 @@ public class CoinsMod {
 		//add recipes
 		ItemRegistry.registerOreDict();
 		CraftingRegistry.registerRecipes();
-		//CraftingRegistry.registerSmelting();
+		CraftingRegistry.registerSmelting();
 	}
 	
 	/**
